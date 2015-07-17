@@ -1,0 +1,16 @@
+<phpunit
+    colors="true"
+    verbose="true"
+    bootstrap="vendor/autoload.php"
+>
+    <testsuites>
+        <testsuite name="framework">
+            <directory>./src/Purinda/PhpNano/Tests/</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <blacklist>
+            <directory>./vendor/</directory>
+        </blacklist>
+    </filter>
+</phpunit>
